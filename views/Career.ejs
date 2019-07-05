@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Enroll_page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="javascripts/my.js"></script>
+  <style>
+#contact-form {display :block}
+/* #contact-form label {display:block;height:40px;overflow:hidden} */
+#contact-form input {float:block;width:406px;font-size:13px;line-height:1.23em;color:#262626;padding:6px 10px;margin:0;font-family:Arial, Helvetica, sans-serif;border:1px solid #d9d9d9;background:#fcfcfc;outline:none}
+#contact-form textarea {float:left;height:192px;overflow:auto;width:776px;font-size:13px;line-height:1.23em;color:#404040;padding:6px 10px;margin:0;font-family:Arial, Helvetica, sans-serif;border:1px solid #d9d9d9;background:#fcfcfc;outline:none}
+
+*{box-sizing:border-box;}
+#side{background: gainsboro; height: 45%; text-align: left;}
+#footer{background: darkgray;clear:both; height:10%; text-align:center;}
+#content1{background: white; float:left; height:85%; width:20%}
+#content2{background: rgb(175, 169, 169); float:center; width: 80%; height:85%}
+#container{height:1080px;}
+li{list-style-position:inside;}
+
+
+</style>
+</head>
+<body>
+  <div id="container">
+  <div align="center"><img src="./images/career.jpg" width="1680px" height="200px"></div>
+  
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Main</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="BlockChain">BlockChain</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Press center</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Publication</a>
+          </li>    
+          <li class="nav-item">
+            <a class="navbar-brand" href="Career">Career</a>
+          </li>   
+        </ul>
+    </nav>
+ <section id="content1">
+ 
+    content1
+
+ </section>
+
+ <article id="content2">
+<form id="contact-form" method="post" enctype="multipart/form-data">
+  <div align="center"><h1>Member_Insert_Page</h1>
+  </div>
+  <fieldset>
+      <div id='result_div' align="center"> 
+    <label><span class="text-form">&nbsp;&nbsp;I&nbsp;D:&nbsp;&nbsp;&nbsp;</span><input name="id" id="id" type="text"/></label><br/>
+    <label><span class="text-form">&nbsp;P&nbsp;W:&nbsp;&nbsp;</span><input name="pw" id="pw" type="text"/></label><br/>
+    <label><span class="text-form">Name:</span><input name="name" id="name" type="text" /></label><br/>                                  
+    <a class="btn btn-default pull-right" href="#" id="member_insert_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회원가입</a>
+    </div>                             
+  </fieldset>						
+</form>
+ </article>
+
+
+ 
+
+
+<footer id="footer">
+    06620 서울특별시 서초구 서초대로74길 11 삼성생명보험주식회사 대표이사 현성철 |사업자등록번호 104-81-26688
+    본 사이트내 이메일무단수집을 거부하며, 위반시 정보통신법에 따라 형사처벌될 수 있습니다.
+    
+    ⓒ SAMSUNG LIFE INSURANCE. ALL RIGHTS RESERVED<br>
+    Copyrightⓒ 2000~2015 Korean Reinsurance Company. All Reserved
+</footer>
+
+<!-- <div align="center"><img src="./images/loginimg.jpg" width="1680px" height="250px"></div> --> 
+<!-- 
+<form id="contact-form" method="post" enctype="multipart/form-data">                    
+  <fieldset>
+    <label><span class="text-form">Name:</span><input name="p1" id="name" type="text" /></label><hr>
+    <label><span class="text-form">Email:</span><input name="p2" id="email" type="text" /></label><hr>
+    <label><span class="text-form">Phone:</span><input name="p3" id="phone" type="text" /></label>                                    
+      <div class="wrapper"><div id="Message" class="text-form">Message:</div><textarea></textarea></div>
+      <div class="buttons">
+    <a class="button" href="#" onClick="document.getElementById('contact-form').reset()">Clear</a>
+    <a class="button" href="#" id="member_insert_btn">Send</a>
+    </div>                             
+  </fieldset>						
+</form> -->
+
+                                          
+
+</body>
+
+</html>
+
+
+
+

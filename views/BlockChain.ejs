@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>   <%
+    if(loginState){
+  %>
+      Login State :<%= name%>
+  <%
+  } else {
+  %>
+    LogOut State
+    <%
+    }  
+    %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="javascripts/my.js"></script>
+  
+  <style>
+*{box-sizing:border-box;}
+#side{background: gainsboro; height: 45%; text-align: left;}
+#side2{background: rgb(161, 145, 145); height: 25%; text-align: left;}
+#footer{background: darkgray;clear:both; height:10%; text-align:center;}
+#content1{background: gainsboro; float:left; width: 70%; height:85%; font-Size: 10px; text-align: right;}
+#content2{background: rgb(175, 169, 169); float:left; width: 18%; height:85%}
+#content3{background: white; float:left; width: 88%; height:20%}
+#container{height:1080px;}
+li{list-style-position:inside;}
+
+  
+  
+  </style>
+
+</head>
+<body>
+    <div id="container">
+  <div align="center"><img src="./images/bg_image.jpg" width="1680px" height="200px"></div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Main</a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" href="BlockChain">BlockChain</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Press center</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Publication</a>
+	    </li>    
+	    <li class="nav-item">
+        <a class="nav-link" href="Career">Career</a>
+      </li>   
+    </ul>
+</nav>
+
+
+<section id="content1" font-Size: 8px;>
+    <div class="slide">
+        
+        <div class="w3-content w3-section" style="max-width:500px">
+          <img class="mySlides" src="images/main1.jpg" style="width:100%">
+          <img class="mySlides" src="images/main2.jpg" style="width:100%">
+          <img class="mySlides" src="images/main3.jpg" style="width:100%">
+        </div>
+        </div>
+        <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+     </section>
+     <article id="content2">
+        <!-- <div align="center"><a href="#"><img src="./images/event2.jpg" width="300px"></a></div> -->
+        <!-- <div align="center"><a href="#"><img src="./images/event1.jpg" width="300px"></a></div> -->
+   
+    간단나의보험조회
+     </article>
+    
+     <article id="content3">
+      블록체인의 개념
+    </article>
+   
+     
+    
+    
+      <loginpage id="side">
+          <form>
+              <% 
+              if(loginState){
+              %>
+                <h1><%= name%>님 로그인되셨습니다.index.ejs</h1> 
+                <button id='logout_btn' style='color:black'>로그아웃
+                </button>
+                
+              <%
+              }else{  
+              %>
+                <div id="login_result_div">
+                    <input id="login_id" type="id" size="20" placeholder="ID"required>
+                    <input id="login_pw" type="pw" size="20" placeholder="PW"required>
+                    <button id="login_btn" type="button" class="btn btn-danger">로그인</button>
+                </div>
+              <%
+              } 
+              %> 
+             </form>
+          
+          
+        
+      </loginpage>
+
+      <blank_page id="side2">
+        <ul>고객센터 ARS ...</ul>
+        <!-- <div align="center"><a href="#"><img src="./images/ars.jpg" width="195px"></a></div> -->
+      </blank_page>
+    
+      <footer id="footer">
+        footer
+      </footer>
+
+  
+
+</body>
+</html>
