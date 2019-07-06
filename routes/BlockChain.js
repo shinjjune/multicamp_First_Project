@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('BlockChain',{
-    name:req.session.name,
+    userid:req.session.userid,
   loginState:req.session.loginState});
 });
 module.exports = router
