@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            <script src="javascripts/my.js"></script>
+        
+        <style>
+                body {
+                background: rgb(214, 208, 208);
+                }
+                #title {
+                font-size: 30px;
+                color: white;
+                background: skyblue;
+                width: 430px;
+                height: 60px;
+                text-align: center;
+                }
+                #searchType{
+                background: skyblue;
+                color: white;
+                width:100px;
+                height:40px;
+                text-align: center;
+                }
+                #searchType_btn{
+                background: skyblue;
+                color: white;
+                width:100px;
+                height:40px;
+                text-align: center;
+                }
+                #print_car{
+                    text-align: center;
+                }
+        </style>
+       
+    </head>
+    <body>
+           
+        <div id="title">나의 보험료</div><br>
+
+        <!-- 콤보박스 -->
+        <select id="searchType">
+            <option value="0" selected>조회타입</option>
+            <option value="1">보험료조회</option>
+            <option value="2">연금조회</option>
+        </select>
+        <br>
+        <!-- 입력창 -->
+        <div id="table_div">
+
+            <div id="car_num">
+            <input class="form-control" size=50 id="insur_input" name="insur" placeholder="이름을 입력하세요" type="text" required>
+            </div>
+            
+        <br>
+        <button id="searchType_btn">조회</button>
+        <br>
+        
+            
+        <!-- 조회예시테이블 -->
+        <div id="print_car">
+        <img src='images/bigyoimg.png' style="width: 80%">
+        </div>
+        </div>
+
+
+    </body>
+</html>
