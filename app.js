@@ -36,6 +36,9 @@ app.use('/Career', require('./routes/Career'));
 app.use('/BlockChain', require('./routes/BlockChain'));
 app.use('/login', require('./routes/login'));
 app.use('/logout', require('./routes/logout'));
+app.use('/search_insur_temp', require('./routes/search_insur_temp'));
+app.use('/search_insur', require('./routes/search_insur'));
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
