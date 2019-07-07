@@ -32,7 +32,7 @@ app.use(session({resave:false,//재할당
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/member_insert', require('./routes/member_insert'));
-app.use('/Career', require('./routes/Career'));
+app.use('/Enrollment', require('./routes/Enrollment'));
 app.use('/BlockChain', require('./routes/BlockChain'));
 app.use('/login', require('./routes/login'));
 app.use('/logout', require('./routes/logout'));
