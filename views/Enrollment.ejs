@@ -22,8 +22,10 @@
 #menu {background: #333; color: white; height:5%; overflow: hidden}
 #side{background: gainsboro; height: 45%; text-align: left;}
 #footer{background: darkgray;clear:both; height:10%; text-align:center;}
-#content1{background: white; float:left; height:85%; width:20%}
-#content2{background: rgb(175, 169, 169); float:center; width: 80%; height:85%}
+#content1{background: white; float:center; height:70%; width:60%; margin-top:30px; margin-right:10%; margin-bottom:30px; margin-left:20%;}
+#content2{background: rgb(161, 204, 223); float:center; width: 60%; height:25%; 
+          margin-top:30px; margin-right:10%; margin-bottom:30px; margin-left:20%; font-family: fantasy;
+          border: 20px black double;}
 #container{height:1080px;}
 li{list-style-position:inside;}
 </style>
@@ -49,34 +51,33 @@ li{list-style-position:inside;}
             <a class="nav-link" href="#">Publication</a>
           </li>    
           <li class="nav-item">
-            <a class="navbar-brand" href="Career">Career</a>
+            <a class="navbar-brand" href="Enrollment">Enrollment</a>
           </li>   
         </ul>
     </nav>
- <section id="content1">
  
-    content1
-
- </section>
 
  <article id="content2">
 <form id="contact-form" method="post" enctype="multipart/form-data">
-  <div align="center"><h1>Member_Insert_Page</h1>
+  <div align="center"><h1>회 원 가 입</h1>
   </div>
   <fieldset>
       <div id='result_div' align="center"> 
     <label><span class="text-form">&nbsp;&nbsp;I&nbsp;D:&nbsp;&nbsp;&nbsp;</span><input name="p1" id="userid" type="text"/></label><br/>
     <label><span class="text-form">&nbsp;P&nbsp;W:&nbsp;&nbsp;</span><input name="p2" id="pw" type="text"/></label><br/>
     <label><span class="text-form">Name:</span><input name="p3" id="name" type="text" /></label><br/>                                  
-    <a class="btn btn-default pull-right" href="#" id="member_insert_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회원가입</a>
+    <a class="btn btn-default pull-right" href="#" id="member_insert_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;등 록</a>
     </div>                             
   </fieldset>						
 </form>
 
-<img src='images/background.jpg' style="width: 75%; height: 713px; align:center;">
  </article>
 
+ <section id="content1">
+ 
+    <div align="center"><img src='images/background.jpg' style="width: 100%;"></div>
 
+ </section>
  
 
 
@@ -91,3 +92,4 @@ li{list-style-position:inside;}
 </body>
 
 </html>
+
