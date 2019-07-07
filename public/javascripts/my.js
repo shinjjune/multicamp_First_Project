@@ -64,7 +64,6 @@ $(document).ready(function() {
                 }
                 printData += '</table>';
                 $('#table_div').html(printData);
-
             }
         });
 
