@@ -8,7 +8,7 @@
   <%
   } else {
   %>
-    LogOut State
+    BlockChain page
     <%
     }  
     %></title>
@@ -28,16 +28,15 @@
 #side{background: gainsboro; width: 20%; height: 400px; text-align: left;}
 #side2{background: rgb(161, 145, 145); height: 500px; text-align: left;}
 #footer{background: darkgray;clear:both; height:10%; text-align:center;}
-#content1{background: white; float:left; width: 37%; height:65%; font-Size: 10px; text-align: right;}
-#content2{background: rgb(175, 169, 169); float:left; width: 37%; height:65%; font-size:20px;}
-#content3{background: white; float:left; width: 15%; height:65%}
+#content1{background: white; float:left; width: 30%; height:70%; font-Size: 10px; text-align: right;}
+#content2{background: white; float:left; width: 40%; height:70%; font-size:20px; border: 1px grey solid;}
+#content3{background: white; float:left; width: 15%; height:70% }
 #container{height:1080px;}
 li{list-style-position:inside;}
 
 
 h3{
-  background : rgb(143, 138, 133);
-  box-shadow: 3px 3px 5px rgb(147, 147, 226);
+  background : white;
   text-shadow: 3px 3px 5px rgb(225, 226, 221);
   text-align: center;
 }
@@ -64,7 +63,7 @@ h3{
         <a class="nav-link" href="#">Publication</a>
 	    </li>    
 	    <li class="nav-item">
-        <a class="nav-link" href="Career">Career</a>
+        <a class="nav-link" href="Enrollment">Enrollment</a>
       </li>   
     </ul>
 </nav>
@@ -111,17 +110,18 @@ h3{
     
      <article id="content3">
         <img src='images/findtitle.jpg' style="width: 100%">
-        <span onclick="window.open('/search_insur_temp','_blank','width=450,height=600,left=200,top=200')"><div align="center">---CLICK---</div></span>
+        <span onclick="window.open('/search_insur_temp','_blank','width=450,height=600,left=200,top=200')"><img src='images/icon1.jpg' style="width: 80%; height:130px; margin-left:30px"></span>
+        <img src='images/icon2.jpg' style="width: 80%; height:130px; margin-left:30px">
+        <img src='images/icon3.jpg' style="width: 80%; height:130px; margin-left:30px">
+        <img src='images/icon4.jpg' style="width: 80%; height:130px; margin-left:30px">
     </article>
    
-     
-    
     
       <loginpage id="side">
           <img src='images/login.jpg' style="width: 10%; height:55px">
         <%
         if(loginState){
-        %>
+        %><br/>
             <%=userid%>님 로그인 되셨습니다.
             <button id='logout_btn' style='color:black'>Logout</button>
         <%
@@ -143,11 +143,6 @@ h3{
         <div align="center"><a href="#"><img src="./images/event1.jpg" width="195px"></a></div>
         <div align="center"><a href="#"><img src="./images/event2.jpg" width="10%" height="210px"></a></div>
       </blank_page>
-    
-      
-      
-      
-      
       
       <footer id="footer">
         06620 서울특별시 서초구 서초대로74길 11 삼성생명보험주식회사 대표이사 현성철 |사업자등록번호 104-81-26688
@@ -157,7 +152,5 @@ h3{
         Copyrightⓒ 2000~2015 Korean Reinsurance Company. All Reserved
       </footer>
 
-  
-
-</body>
+	</body>
 </html>
