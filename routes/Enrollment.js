@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('Career',{
+  res.render('Enrollment',{
     userid:req.session.userid,
   loginState:req.session.loginState});
 });
