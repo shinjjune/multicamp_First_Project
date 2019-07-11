@@ -24,3 +24,5 @@ comments varchar(255));
 insert into member(name,id,comments) values('신준혁','sjh','hihi');
 
 select *from memeber;
+
+cmd $) npm i mysql
